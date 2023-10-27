@@ -1,785 +1,862 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiisi Felix</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiisi Felix</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/avatar-1.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/avatar-1.png"
+      type="image/png"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- MAIN -->
 
-  <!--
-    - #MAIN
-  -->
+    <main>
+      <!-- SIDEBAR -->
 
-  <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/avatar-1.png"
+              alt="Subahm Sharma"
+              width="80"
+            />
+          </figure>
 
-    <!--
-      - #SIDEBAR
-    -->
+          <div class="info-content">
+            <h1 class="name" title="Subham Sharma">Kiisi Felix</h1>
 
-    <aside class="sidebar" data-sidebar>
+            <p class="title">Frontend Developer (ReactJS &amp; Flutter)</p>
+            <p></p>
+          </div>
 
-      <div class="sidebar-info">
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-1.png" alt="Subahm Sharma" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Subham Sharma">Kiisi Felix</h1>
-
-          <p class="title">Web Developer | Reactjs Developer</p>
-         
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:kiisifelix06@gmail.com" class="contact-link"
+                  >kiisifelix06@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+2349155958012" class="contact-link"
+                  >+2349155958012</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <a href="mailto:kiisifelix06@gmail.com" class="contact-link">kiisifelix06@gmail.com</a>
-            </div>
+                <address>Nigeria</address>
+              </div>
+            </li>
+          </ul>
 
-          </li>
+          <div class="separator"></div>
 
-          <li class="contact-item">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/kiisi"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+            <li class="social-item">
+              <a
+                href="https://twitter.com/kiisif"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/kiisifelix/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-              <a href="tel:+2349155958012" class="contact-link">+2349155958012</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Nigeria</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/kiisi" class="social-link" target='_blank'>
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/kiisif" class="social-link" target='_blank'>
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/kiisifelix/" class="social-link" target='_blank'>
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Location</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I am a passionate and highly skilled Frontend Reactjs Developer
+              with 3 years of meaningful contributions to teams of varying size
+              and scope. With my results-driven mentality and also deadline
+              oriented I enjoy turning complex problems into simple, beautiful
+              and intuitive solutions.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I am a Website &amp; Reactjs Developer with 3 years of proven leadership and meaningful contributions to teams of varying size and scope. With my results-driven mentality and also deadline oriented
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive solutions. 
-          </p>
+            <p>
+              With a strong command of Tailwind CSS, adept at creating stunning
+              user interfaces and interactive applications. Committed to
+              delivering high-quality, performance-driven web solutions while
+              utilizing REST APIs. Seeking opportunities to contribute my
+              expertise to innovative projects.
+            </p>
+          </section>
 
-          <p>
-            I am passionate about going extra mile to ensure the client is unquestionably satisfied with the product or service provided, With emphasis on scalable and well-documented code, I look forward to working collaboratively.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Frontend Development</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    High-quality development of websites and web application at
+                    the professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-                <p class="service-item-text">
-                  High-quality development of websites and web application at the professional level.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Junior flutter mobile application developer - Android.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            </li>
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Junior flutter mobile application developer Android.
-                </p>
-              </div>
-
-            </li>
-
-            
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web developer <p class="timeline-text">Highrise</p></h4>
-
-              <span>Contract Job</span>
-
-              <p class="timeline-text">
-                • Developed responsive web applications using JSX, CSS3 and Reactjs Nodejs, Expressjs, MongoDB and integration of payment gateway (Paystack).
-              </p>
-              <p class="timeline-text">
-                • Implemented front-end frameworks such as ReactJS and TailwindCSS to create dynamic user interfaces.
-              </p>
-              <p class="timeline-text">
-                • Collaborated with designers to ensure pixel-perfect implementation of design mockups.
-              </p>
-              <p class="timeline-text">
-                • Utilized back-end technologies, including Node.js and Express.js, to develop server-side logic and RESTful APIs.
-              </p>
-              <p class="timeline-text">
-                • Integrated MongoDB, to store and retrieve data efficiently.• Implemented SEO best practices to optimize web pages for search engine visibility.
-              </p>
-              <p class="timeline-text">
-                • Integrated third-party APIs and packages to enhance functionality and data retrieval.
-              </p>
-              <p class="timeline-text">
-                • Conducted thorough testing and debugging to ensure smooth functionality and user experience across different browsers and devices.
-              </p>
-              <p class="timeline-text">
-                • Implemented CI/CD pipelines with Git and GitHub Actions for automated deployment.
-              </p>
-              
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web developer <p class="timeline-text">Speedway International Delivery Company</p></h4>
-
-              <span>Contract Job</span>
-
-              <p class="timeline-text">
-                • Developed a website that allows users to track their products when they input a valid product tracking code on the website with Reactjs, Nodejs, Expressjs and MongoDB.
-              </p>
-              <p class="timeline-text">
-                • Developed a website that allows users to track their products when they input a valid product tracking code on the website with Reactjs, Nodejs, Expressjs and MongoDB.
-              </p>
-              <p class="timeline-text">
-                • Responsible for development of an admin panel which allows the admin to generate a unique product tracking code to the users on every product delivery.
-              </p>
-              <p class="timeline-text">
-                • I implemented and maintained advanced security measures to protect admin assets, safe guarding integrity of confidential data and access from unauthorized users.
-              </p>
-              <p class="timeline-text">
-                • Optimized application performance through code refactoring and implementation of best practices.• Utilized HTML, CSS, JSX and JavaScript to create a responsive website for both client and admin.
-              </p>
-              <p class="timeline-text">
-                • Integrated third-party APIs and packages to enhance functionality and data retrieval.
-              </p>
-              <p class="timeline-text">
-                • Conducted code reviews and provided constructive feedback to team members.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Reactjs Developer <p class="timeline-text">Movix</p></h4>
-
-              <span>Freelance Job</span>
-
-              <p class="timeline-text">
-                Worked on <b>Reactjs</b>.
-                Made Websites <b>responsive</b> and device friendly. Worked on personal strict deadlines.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Development <p class="timeline-text">FalconLite</p></h4>
-
-              <span>Freelance Job</span>
-
-              <p class="timeline-text">
-                Developed  <b>3</b> web apps using <b>React.JS</b>.
-                Implemented Incremental Static Regeneration. Improvised SEO and Accessibility
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Reactjs</h5>
-                <!-- <data value="90">90%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 99%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Nextjs</h5>
-                <!-- <data value="90">90%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-                <!-- <data value="95">95%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SCSS</h5>
-                <!-- <data value="95">95%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter</h5>
-                <!-- <data value="60">60%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">TypeScript</h5>
-                <!-- <data value="70">70%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <!-- <data value="70">70%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Nodejs</h5>
-                <!-- <data value="70">80%</data> -->
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Frontend Developer
+                  <p class="timeline-text-title">Projobmatch</p>
+                  <p class="timeline-link">
+                    <i
+                      ><a href="https://projobmatch.com" target="_blank"
+                        >projobmatch.com</a
+                      ></i
+                    >
+                  </p>
+                </h4>
+
+                <!-- <span></span><br/> -->
+
+                <span>Contract</span>
+
+                <p class="timeline-text">
+                  • Implemented front-end frameworks such as ReactJS and
+                  TailwindCSS to create dynamic user interfaces. and for
+                  efficient and consistent UI design, resulting in a more
+                  productive and cohesive development process.
+                </p>
+                <p class="timeline-text">
+                  • Worked closely with UI/UX designers to bring wireframes and
+                  mockups to life, ensuring a pixel-perfect end product.
+                </p>
+                <p class="timeline-text">
+                  • Designed and implemented interactive user interfaces,
+                  including forms, modals, and custom components, to enhance the
+                  user experience.
+                </p>
+                <p class="timeline-text">
+                  • Utilized React context API for state management for managing
+                  application data and state.
+                </p>
+                <p class="timeline-text">
+                  • Integrated third-party APIs and packages to enhance
+                  functionality and data retrieval.
+                </p>
+                <p class="timeline-text">
+                  • Conducted thorough testing and debugging to ensure smooth
+                  functionality and user experience across different browsers
+                  and devices.
+                </p>
+                <p class="timeline-text">
+                  • Optimized application performance through code splitting,
+                  lazy loading, and reducing unnecessary re-renders.
+                </p>
+                <p class="timeline-text">
+                  • Conducted regular code reviews and collaborated with team
+                  members to maintain clean and well-documented codebase.
+                </p>
+                <p class="timeline-text">
+                  • Used Jira to track and manage tasks, prioritize work, and
+                  collaborate with team members to develop and deliver the
+                  product.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Frontend Developer
+                  <p class="timeline-text-title">Alloota</p>
+                  <p class="timeline-link">
+                    <i
+                      ><a href="http://alloota.vercel.app" target="_blank"
+                        >alloota.vercel.app</a
+                      ></i
+                    >
+                  </p>
+                </h4>
+
+                <!-- <span></span><br/> -->
+
+                <span>Remote</span>
+
+                <p class="timeline-text">
+                  • Collaborated on a project where I inherited an existing
+                  NextJS + TypeScript codebase and played a key role in its
+                  development and maintenance.
+                </p>
+                <p class="timeline-text">
+                  • Utilized React.js and Next.js to enhance and expand the web
+                  application, including implementing new features and improving
+                  existing functionality.
+                </p>
+                <p class="timeline-text">
+                  • Developed custom components and interactive features to
+                  improve the overall user interface and user engagement.
+                </p>
+                <p class="timeline-text">
+                  • Assisted in debugging, testing, and troubleshooting issues
+                  to ensure a smooth user experience.
+                </p>
+                <p class="timeline-text">
+                  • Utilized Redux toolkit state management library for managing
+                  app wide state and React context API providing shared
+                  functionality to all react components in the component tree
+                </p>
+                <p class="timeline-text">
+                  • Integrated third-party APIs and packages like Material UI,
+                  SwiperJS ... to enhance functionality and add more
+                  functionalities to the web application seamlessly
+                </p>
+                <p class="timeline-text">
+                  • Worked closely with backend developers to integrate RESTful
+                  APIs into the application, enhancing its dynamic data
+                  capabilities.
+                </p>
+                <p class="timeline-text">
+                  • Used Clickup to track and manage tasks, prioritize work, and
+                  collaborate with team members to develop and deliver the
+                  product.
+                </p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Frontend Developer
+                  <p class="timeline-text-title">Highrise</p>
+                  <p class="timeline-link">
+                    <i
+                      ><a href="https://classified.highrisenews.com" target="_blank"
+                        >highrisenews.com</a
+                      ></i
+                    >
+                  </p>
+                </h4>
+
+                
+
+                <span>Remote</span>
+
+                <p class="timeline-text">
+                  • Collaborated on a project where I inherited an existing NextJS + TypeScript codebase and played a key role in its development and maintenance.
+                </p>
+                <p class="timeline-text">
+                  • Utilized React.js and Next.js to enhance and expand the web application, including implementing new features and improving existing functionality.
+                </p>
+                <p class="timeline-text">
+                  • Developed custom components and interactive features to improve the overall user interface and user engagement.
+                </p>
+                <p class="timeline-text">
+                  • Assisted in debugging, testing, and troubleshooting issues to ensure a smooth user experience.
+                </p>
+                <p class="timeline-text">
+                  • Utilized Redux toolkit state management library for managing app wide state and React context API providing shared functionality to all react components in the component tree
+                </p>
+                <p class="timeline-text">
+                  • Integrated third-party APIs and packages like Material UI, SwiperJS ... to enhance
+                  functionality and add more functionalities to the web application seamlessly
+                </p>
+                <p class="timeline-text">
+                  • Worked closely with backend developers to integrate RESTful APIs into the application, enhancing its dynamic data capabilities.
+                </p>
+                <p class="timeline-text">
+                  • Used Clickup to track and manage tasks, prioritize work, and
+                  collaborate with team members to develop and deliver the
+                  product.
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card chip-card">
+              <!--  
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Nodejs</h5>
+                    <data value="70">80%</data>
+                  </div>
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 70%;"></div>
+                  </div>
+                </li> 
+              -->
+
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+              <li class="chip">Tailwindcss</li>
+              <li class="chip">Sass</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Reactjs</li>
+              <li class="chip">Nextjs</li>
+              <li class="chip">Nodejs</li>
+              <li class="chip">Expressjs</li>
+              <li class="chip">Typescript</li>
+              <li class="chip">Dart</li>
+              <li class="chip">Flutter</li>
+              <li class="chip">Python</li>
+              <li class="chip">Bash</li>
+              <li class="chip">Git</li>
+              <li class="chip">Github</li>
+              <li class="chip">Responsive design</li>
+              <li class="chip">Communication</li>
+              <li class="chip">Teamwork</li>
+              <li class="chip">Critical thinking</li>
+              <li class="chip">Time management</li>
+              <li class="chip">Debugging</li>
+              <li class="chip">Troubleshooting</li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://kartlog.co" target="_blank">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Personal Project</button>
+                </li>
 
-                  <img src="./assets/images/kartlog.PNG" alt="Kartlog - Marketplace for custom-made clothings" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Commercial Project</button>
+                </li>
+              </ul>
+            </div>
 
-                <h3 class="project-title">Kartlog</h3>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="commercial project"
+              >
+                <a
+                  href="http://alloota.vercel.app"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web development</p>
+                    <img
+                      src="./assets/images/alloota.PNG"
+                      alt="Alloota - Food and Grocery Ordering and Delivery Marketplace"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">Alloota</h3>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://kiisi.github.io/binance_landing_page/" target="_blank">
+                  <p class="project-category">Reactjs/Nextjs development</p>
+                </a>
+              </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="commercial project"
+              >
+                <a
+                  href="https://www.projobmatch.com"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/binancelandingpageclone.PNG" alt="Binance landing page clone made by Kiisi Felix Destiny" loading="lazy">
-                </figure>
+                    <img
+                      src="./assets/images/projobmatch.PNG"
+                      alt="Projobmatch - Unlock global opportunities using automation"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Binance Landing Page Clone</h3>
+                  <h3 class="project-title">Projobmatch</h3>
 
-                <p class="project-category">Web development</p>
+                  <p class="project-category">Reactjs/Nextjs development</p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="commercial project"
+              >
+                <a href="https://legalcy.netlify.app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://kiisi.github.io/calculator/" target="_blank">
+                    <img
+                      src="./assets/images/legalcy.PNG"
+                      alt="Legalcy"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Legalcy</h3>
 
-                  <img src="./assets/images/calculator.PNG" alt="fundo" loading="lazy">
-                </figure>
+                  <p class="project-category">Reactjs Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Calculator</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="commercial project"
+              >
+                <a href="https://classified.highrisenews.com" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Javascript Development</p>
+                    <img
+                      src="./assets/images/highrise.PNG"
+                      alt="Highrise"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">Highrise</h3>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://movixfrontend.netlify.app/" target="_blank">
+                  <p class="project-category">Reactjs development</p>
+                </a>
+              </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="personal project"
+              >
+                <a
+                  href="https://kiisi.github.io/binance_landing_page/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/movix.PNG" alt="Movix - A web application where you can get movie recommendations." loading="lazy">
-                </figure>
+                    <img
+                      src="./assets/images/binancelandingpageclone.PNG"
+                      alt="Binance landing page clone made by Kiisi Felix Destiny"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Movix</h3>
+                  <h3 class="project-title">Binance Landing Page Clone</h3>
 
-                <p class="project-category">Reactjs Development</p>
+                  <p class="project-category">HTML/CSS/JS development</p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="personal project"
+              >
+                <a href="https://kiisi.github.io/calculator/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://legalcy.netlify.app/" target='_blank'>
+                    <img
+                      src="./assets/images/calculator.PNG"
+                      alt="calculator"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Calculator</h3>
 
-                  <img src="./assets/images/legalcy.PNG" alt="Legalcy" loading="lazy">
-                </figure>
+                  <p class="project-category">Javascript Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Legalcy</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="personal project"
+              >
+                <a href="https://movixfrontend.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Reactjs Development</p>
+                    <img
+                      src="./assets/images/movix.PNG"
+                      alt="Movix - A web application where you can get movie recommendations."
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">Movix</h3>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://kiisi.github.io/github_user_finder/" target='_blank'>
+                  <p class="project-category">Reactjs Development</p>
+                </a>
+              </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="personal project"
+              >
+                <a
+                  href="https://kiisi.github.io/github_user_finder/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/githubuserfinder.PNG" alt="Github user finder" loading="lazy">
-                </figure>
+                    <img
+                      src="./assets/images/githubuserfinder.PNG"
+                      alt="Github user finder"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Github User finder</h3>
+                  <h3 class="project-title">Github User finder</h3>
 
-                <p class="project-category">Javascript Development</p>
+                  <p class="project-category">HTML/CSS/JS Development</p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="personal project"
+              >
+                <a href="https://papersowlclone.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://high-risenews.ng" target='_blank'>
+                    <img
+                      src="./assets/images/papersowlclone.PNG"
+                      alt="Papersowl Clone"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Papersowl Clone</h3>
 
-                  <img src="./assets/images/highrise.PNG" alt="Highrise" loading="lazy">
-                </figure>
+                  <p class="project-category">Reactjs Development</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Highrise</h3>
+              <!-- <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://www.speedwayinternationaldeliverycompany.com/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Web development</p>
+                    <img
+                      src="./assets/images/swid.PNG"
+                      alt="Swid package tracker"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">SWID Package Delivery Tracker</h3>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://papersowlclone.netlify.app/" target='_blank'>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/papersowlclone.PNG" alt="Papersowl Clone" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Papersowl Clone</h3>
-
-                <p class="project-category">Reactjs Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.speedwayinternationaldeliverycompany.com/" target='_blank'>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/swid.PNG" alt="Swid package tracker" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SWID Package Delivery Tracker</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="location">
+          <header>
+            <h2 class="h2 article-title">Location</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.547127091968!2d7.036488714263348!3d4.847532741717836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd8ff1f7f461%3A0x85574b83cc393c69!2sNew%20Haven%20Avenue%2C%20Mgbuesilara%20500102%2C%20Port%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1679469463734!5m2!1sen!2sng"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.547127091968!2d7.036488714263348!3d4.847532741717836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd8ff1f7f461%3A0x85574b83cc393c69!2sNew%20Haven%20Avenue%2C%20Mgbuesilara%20500102%2C%20Port%20Harcourt%2C%20Rivers!5e0!3m2!1sen!2sng!4v1679469463734!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <!-- <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section> -->
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit"  data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
